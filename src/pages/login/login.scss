@@ -1,0 +1,100 @@
+/** this is login scss */
+.h1{
+  font-size:60px;
+  color:rgba(0,0,0,1);
+  line-height:84px;
+  margin-bottom: 18px;
+}
+
+.login{
+  padding: 28px 84px 0;
+
+  .tip{
+    color: #B3B3B3;
+    font-size: 22px;
+    line-height: 30px;
+  }
+
+  .inputWrap{
+    border-bottom: 1PX solid #DEDEDE;
+    padding: 112px 0 40px;
+    margin-bottom: 400px; 
+
+    input{
+      font-size:28px;
+      // font-weight:500;
+      color:#101010;
+      line-height:40px;
+    }
+  }
+}
+
+.verifyCode{
+  padding: 28px 84px 0;
+
+  .top{
+    height: 228px;
+  }
+
+  .tip{
+    color: #B3B3B3;
+    font-size: 22px;
+    line-height: 30px;
+  }
+
+  .inputs{
+    padding: 0 0px 20px;
+    display: flex;
+    justify-content: space-between;
+    border-bottom: 1PX solid #ECECEC;
+    margin-bottom: 180px;
+
+    input{
+      font-size:34px;
+      font-weight:600;
+      color: #000;
+      line-height:48px;
+
+      &.active {
+        border-bottom-color: #484848;
+      }
+    }
+  }
+
+  .timer{
+    color: #999;
+    font-size: 26px;
+    line-height: 48px;
+    text-align: center;
+
+    &.again{
+      color: #7da4e4
+    }
+  }
+
+  .agreement{
+    padding-top: 30px;
+    color: #999;
+    font-size:24px;
+    display: flex;
+    align-items: center;
+
+    view{
+      margin-right: 10px;
+      width: 32px;
+      height: 32px;
+      border-radius: 100%;
+      border: 2px solid rgba(229,229,229,1);
+
+      &.selected{
+        background: #FF3B53 url('../../assets/imgs/selected.png') no-repeat;
+        border-color: #FF3B53;
+        background-size: cover;
+      }
+    }
+
+    a{
+      color: #666;
+    }
+  }
+}

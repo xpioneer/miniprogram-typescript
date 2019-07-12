@@ -1,0 +1,61 @@
+/**app.wxss**/
+// *{
+//   margin:0;
+//   padding: 0;
+//   box-sizing: border-box;
+//   font-style: normal;
+//   font-weight: normal;
+//   font-family: 'Avenir', Helvetica, Arial, sans-serif;
+//   -webkit-font-smoothing: antialiased;
+//   -moz-osx-font-smoothing: grayscale;
+// }
+
+input, textarea, button, select {
+  outline: none;
+  -webkit-appearance:none;
+}
+// image,button,input {
+//   border: none;
+// }
+button::after{
+  display: none;
+}
+
+.clearfix ::after{
+  content: '';
+  display: block;
+  clear: both;
+}
+
+.font600{
+  font-weight: 600
+}
+
+.o-btn {
+  background:linear-gradient(135deg,rgba(255,40,81,1) 0%,rgba(247,115,104,1) 100%);
+  border: none;
+  border-radius:8px;
+  height: 84px;
+  width: 100%;
+  margin: auto;
+  color: #fff;
+  font-size: 32px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  &.lg{
+    width: 582px;
+  }
+
+  &.line{
+    color: #FE2F53;
+    border: 1PX solid #FE2F53;
+    background: #fff;
+  }
+  
+  &.disabled{
+    color: #ccc;
+    background: #eee;
+  }
+}

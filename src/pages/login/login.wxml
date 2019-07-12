@@ -1,0 +1,26 @@
+<!-- <page> -->
+  <view class="login" wx:if="{{!isGetCode}}">
+    <view class="h1 font600">输入手机号</view>
+    <view class="tip">登录以使用更多服务</view>
+    <view class="inputWrap">
+      <input class="" type="text" maxlength="11" placeholder="请输入手机号" bindinput="inputMobile"/>
+    </view>
+    <button class="o-btn lg font600 {{className}}" bindtap="tapNext">下一步</button>
+  </view>
+
+  <view class="verifyCode" wx:else>
+    <view class="top">
+      <text class="h1 font600" wx:if="{{registered}}">135****5206\n欢迎回来</text>
+      <view class="h1 font600" wx:else>输入验证码</view>
+      <view class="tip" wx:if="{{!registered}}">我们已向+86{{mobile}}发送了一个4位验证码</view>
+    </view>
+    <view class="inputs">
+      <input type="text" name="" maxlength="4" placeholder="请输入验证码" bindinput="inputCode"/>
+      <view class="timer {{timer === 0 ? 'again' : ''}}" bindtap="postCode">{{(timer > 0 ? (timer + 's后') : '') + '重新获取'}}</view>
+    </view>
+    
+    <button class="o-btn lg font600 {{registClassName}}" bindtap="register">注册</button>
+    <view class="agreement"><view class="{{agree ? 'selected':''}}" bindtap="toggleAgree"></view> 同意<a>《注册服务协议》</a><a>《隐私政策》</a></view>
+    
+  </view>
+<!-- </page> -->
